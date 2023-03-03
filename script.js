@@ -84,10 +84,15 @@ function updateAreas(){
 
     if(areas.a === '1' && areas.b === '2' && areas.c === '3'){
         document.querySelector('.areas').classList.add('correct');
+        document.querySelector('.reset').style.display = 'block';
         //console.log("ACERTOU");
     }else{
         document.querySelector('.areas').classList.remove('correct');
         //console.log("ERROU");
     }
 
+}
+
+function reiniciar() {
+    window.location.reload();
 }
